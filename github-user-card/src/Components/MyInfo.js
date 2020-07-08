@@ -6,7 +6,7 @@ const MyInfo = props =>{
             <h1>My Github User Information:</h1>
             <div className='card'>
                 <img src={props.myInfo.avatar_url}/>
-                <div className='card-info'>
+                <div className='myinfo'>
                     <h3>{props.myInfo.name}</h3>
                     <a href={props.myInfo.html_url}>{props.myInfo.login}</a>
                     <p>Location: {props.myInfo.location}</p>

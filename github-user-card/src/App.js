@@ -35,7 +35,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='app'>
         <MyInfo myInfo={this.state.myInfo}/>
         <FollowersList followersList={this.state.followers}/>
       </div>
