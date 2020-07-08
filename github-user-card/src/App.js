@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import {v4 as uuid} from 'uuid';
 import axios from 'axios';
+import MyInfo from './Components/MyInfo';
+import FollowersList from './Components/FollowersList';
 
 class App extends React.Component {
 
@@ -35,7 +36,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>Welcome to your Todo App!</h2>
+        <MyInfo myInfo={this.state.myInfo}/>
+        <FollowersList followersList={this.state.followers}/>
       </div>
     );
   }
